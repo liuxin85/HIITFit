@@ -19,6 +19,8 @@ struct Exercise {
     }
 }
 
+
+
 extension Exercise {
     static let exercises = [
         Exercise(exerciseName: ExerciseEnum.squat.rawValue, videoName: "squat"),

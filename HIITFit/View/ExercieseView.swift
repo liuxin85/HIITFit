@@ -10,12 +10,11 @@ import AVKit
 
 struct ExercieseView: View {
     @Binding var selectedTab: Int
-    @State private var rating = 0
+
     @State private var showHistory = false
     @State private var showSuccess = false
     
     let index: Int
-//    let interval: TimeInterval = 30
     @State private var timerDone = false
     @State private var showTimer = false
     @EnvironmentObject var history: HistoryStore
@@ -48,7 +47,7 @@ struct ExercieseView: View {
                 }
                 Spacer()
                 
-                RatingView(rating: $rating)
+                RatingView(exerciseIndex: index)
                     .padding()
                 
               
